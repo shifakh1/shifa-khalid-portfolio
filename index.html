@@ -3,265 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shifa Khalid | Professional Portfolio</title>
+    <title>Shifa Khalid | Frontend Developer</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="dark-theme">
-    <!-- Animated Background -->
-    <div class="animated-bg"></div>
-    
-    <!-- Header -->
-    <header id="header">
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <a href="#home"><span class="neon-text">Shifa</span>Khalid</a>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li>
-                        <div class="theme-toggle">
-                            <input type="checkbox" id="toggle-theme" checked>
-                            <label for="toggle-theme" class="toggle-label">
-                                <i class="fas fa-moon"></i>
-                                <i class="fas fa-sun"></i>
-                                <span class="toggle-ball"></span>
-                            </label>
-                        </div>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </nav>
+<body>
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="title-group">
+            <h1>Shifa Khalid</h1>
+            <h2>Frontend Developer</h2>
+            <div class="profile-img-container">
+                <img src="assets/profile.jpg" alt="Shifa Khalid" class="profile-img">
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/shifakh1" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="slide-in-left">Hi, I'm <span class="neon-text">Shifa Khalid</span></h1>
-                    <h2 class="slide-in-right neon-heading">Frontend Developer</h2>
-                    <p class="fade-in">I create beautiful, responsive websites with modern technologies</p>
-                    <div class="hero-btns">
-                        <a href="#projects" class="btn neon-btn pulse">View My Work</a>
-                        <a href="#contact" class="btn outline-btn">Contact Me</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-wrapper scale-in neon-border">
-                        <img src="myimage.png" alt="Your Name">
-                    </div>
-                </div>
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="about-container">
+            <div class="image-container">
+                <img src="assets/profile.jpg" alt="Shifa Khalid" class="about-img">
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">About <span class="neon-text">Me</span></h2>
-                <div class="about-content">
-                    <div class="about-image">
-                        <div class="image-container neon-border floating">
-                            <img src="myimage.png" alt="About Me">
-                        </div>
-                    </div>
-                    <div class="about-text">
-                        <h3>Who am I?</h3>
-                        <p>I'm a passionate frontend developer with 3+ years of experience creating modern, responsive websites and web applications. I specialize in HTML, CSS, JavaScript, and React.</p>
-                        <p>My approach combines technical expertise with an eye for design to deliver exceptional user experiences.</p>
-                        
-                        <div class="about-info">
-                            <div class="info-card neon-glow">
-                                <span>Name:</span>
-                                <p>Shifa Khalid</p>
-                            </div>
-                            <div class="info-card neon-glow">
-                                <span>Email:</span>
-                                <p>shifakhalid124@gmail.com</p>
-                            </div>
-                            <div class="info-card neon-glow">
-                                <span>Experience:</span>
-                                <p>3+ Years</p>
-                            </div>
-                            <div class="info-card neon-glow">
-                                <span>Location:</span>
-                                <p>Lahore</p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn neon-btn">Download CV</a>
-                    </div>
-                </div>
+            <div class="text-container">
+                <p>Hello! I'm Shifa Khalid, a passionate Frontend Developer with 1 year of experience in building responsive and user-friendly web applications.</p>
+                <p>My expertise includes HTML, CSS, JavaScript, React, and Next.js. I love turning ideas into reality through clean, efficient code and beautiful designs.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee while brainstorming my next project.</p>
             </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2 class="section-title">My <span class="neon-text">Skills</span></h2>
-                <div class="skills-container">
-                    <div class="skill-card neon-glow">
-                        <div class="skill-icon neon-icon">
-                            <i class="fab fa-html5"></i>
-                        </div>
-                        <h3>HTML5</h3>
-                        <p>Semantic markup, accessibility, SEO optimization</p>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-width="95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-card neon-glow">
-                        <div class="skill-icon neon-icon">
-                            <i class="fab fa-css3-alt"></i>
-                        </div>
-                        <h3>CSS3</h3>
-                        <p>Flexbox, Grid, animations, responsive design</p>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-width="90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-card neon-glow">
-                        <div class="skill-icon neon-icon">
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <h3>JavaScript</h3>
-                        <p>ES6+, DOM manipulation, async programming</p>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-width="85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-card neon-glow">
-                        <div class="skill-icon neon-icon">
-                            <i class="fab fa-react"></i>
-                        </div>
-                        <h3>React</h3>
-                        <p>Components, hooks, context API, Redux</p>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-width="80%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">My <span class="neon-text">Projects</span></h2>
-                <div class="projects-container">
-                    <div class="project-card neon-glow">
-                        <div class="project-image">
-                            <img src="https://i.pinimg.com/originals/8d/9f/2c/8d9f2ca7443b6f31816fc0e5c5053d06.png" alt="Project 1">
-                        </div>
-                        <div class="project-info">
-                            <h3>E-commerce Website</h3>
-                            <p>A fully responsive e-commerce platform with cart functionality and payment integration.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>React</span>
-                            </div>
-                            <a href="#" class="btn neon-btn">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-card neon-glow">
-                        <div class="project-image">
-                            <img src="https://tse4.mm.bing.net/th/id/OIP.wJuhhxCngo12ZWic1YjaXAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Project 2">
-                        </div>
-                        <div class="project-info">
-                            <h3>Portfolio Template</h3>
-                            <p>A customizable portfolio template for creatives and developers.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <a href="#" class="btn neon-btn">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-card neon-glow">
-                        <div class="project-image">
-                            <img src="https://tse4.mm.bing.net/th/id/OIP.N1eXlyr3dn_4323on5CtWQHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Project 3">
-                        </div>
-                        <div class="project-info">
-                            <h3>Task Management App</h3>
-                            <p>A productivity app for managing tasks with drag-and-drop functionality.</p>
-                            <div class="project-tech">
-                                <span>React</span>
-                                <span>Node.js</span>
-                                <span>MongoDB</span>
-                            </div>
-                            <a href="#" class="btn neon-btn">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Get In <span class="neon-text">Touch</span></h2>
-                <div class="contact-container">
-                    <div class="contact-info neon-glow">
-                        <h3>Contact Information</h3>
-                        <p>Feel free to reach out to me for any questions or opportunities.</p>
-                        <div class="info-item">
-                            <i class="fas fa-envelope neon-icon"></i>
-                            <span>Email:</span>
-                            <p>shifakhalid124@gmail.com</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone neon-icon"></i>
-                            <span>Phone:</span>
-                            <p>+3259330886</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt neon-icon"></i>
-                            <span>Location:</span>
-                            <p>Lahore, Pakistan</p>
-                        </div>
-                        <div class="social-links">
-                            <a href="#" class="neon-icon"><i class="fab fa-github"></i></a>
-                            <a href="#" class="neon-icon"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="neon-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="neon-icon"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <form class="contact-form neon-glow">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn neon-btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="neon-glow">
-        <div class="container">
-            <p>&copy; <span id="year"></span> <span class="neon-text">Shifa Khalid</span>. All Rights Reserved.</p>
         </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1>My Skills</h1>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h2>Frontend</h2>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>HTML</span>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress html" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>CSS</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress css" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress js" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>React</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress react" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Next.js</span>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress next" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h2>Tools & Libraries</h2>
+                <div class="tools-container">
+                    <div class="tool-item">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fab fa-bootstrap"></i>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fab fa-npm"></i>
+                        <span>npm</span>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fas fa-terminal"></i>
+                        <span>CLI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/amazon-project.jpg" alt="Amazon Clone">
+                </div>
+                <div class="project-info">
+                    <h2>Amazon Website Clone</h2>
+                    <p>A responsive clone of Amazon's homepage built with HTML and CSS, showcasing product listings and navigation.</p>
+                    <div class="tech-used">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/shifakh1/amazon-homepage-clone" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="disabled-link">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/portfolio-project.jpg" alt="Portfolio Website">
+                </div>
+                <div class="project-info">
+                    <h2>Portfolio Website</h2>
+                    <p>A personal portfolio website built with HTML, CSS, and JavaScript to showcase projects and skills.</p>
+                    <div class="tech-used">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/shifakh1/shifa-khalid-portfolio" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="disabled-link">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/papajohns-project.jpg" alt="Papa Johns Clone">
+                </div>
+                <div class="project-info">
+                    <h2>Papa Johns Website Clone</h2>
+                    <p>A frontend design of Papa Johns pizza website built with Next.js, featuring product listings and ordering system.</p>
+                    <div class="tech-used">
+                        <span>Next.js</span>
+                        <span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/shifakh1/papa-johns-clone-nextjs" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="disabled-link">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/autocars-project.jpg" alt="Autocars Website">
+                </div>
+                <div class="project-info">
+                    <h2>Autocars Website</h2>
+                    <p>A car dealership website built with React, featuring vehicle listings, search functionality, and contact forms.</p>
+                    <div class="tech-used">
+                        <span>React</span>
+                        <span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/shifakh1/Autocarswebsite" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="disabled-link">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Get In Touch</h1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>shifakhalid124@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+92 3259330886</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/shifakh1" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Send Me a Message</h2>
+                <form id="form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Shifa Khalid. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
